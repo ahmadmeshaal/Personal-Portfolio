@@ -1,0 +1,44 @@
+body{
+    height: 200vh;
+}
+.flex{
+    display: flex;
+    gap: 3px;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.just-center{
+    justify-content: center;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+    width:70% ;
+    margin: auto;
+}
+.tab{
+    color: aliceblue;
+}
+
+@media(min-width: 760px)
+{
+    nav{
+        width: 80%;
+    }
+}
+
+.icon{
+    border-radius: 20px;
+    margin: 2px;
+    background-color: greenyellow;
+    width: fit-content;
+}
+
