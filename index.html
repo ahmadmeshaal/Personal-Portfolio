@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Personal Portfolio</title>
 
     <link
@@ -13,32 +14,57 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
 
-  <body class="">
-    <nav class="flex row">
-      <a class="tab" href="#">Home</a>
-      <a class="tab" href="#">About</a>
-      <a class="tab" href="#">Skills</a>
-      <a class="tab" href="#">Projects</a>
-      <a class="tab" href="#">GitHub</a>
-      <a class="tab" href="#">Experience</a>
-      <a class="tab" href="#">Education</a>
-      <a class="btn" href="#contact">Theam</a>
-      <a class="btn" href="#contact">Contact</a>
-    </nav>
+  <body>
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+<nav>
+
+    <a href="#home" class="tab">Home</a>
+
+    <a href="#about" class="tab">About</a>
+
+    <a href="#skills" class="tab">Skills</a>
+
+    <a href="#projects" class="tab">Projects</a>
+
+    <a href="#experience" class="tab">Experience</a>
+
+    <a href="#education" class="tab">Education</a>
+
+    <a href="#contact" class="tab">Contact</a>
+
+    <button class="theme-btn" type="button" title="Change Theme">
+        <i class="fa fa-sun-o"></i>
+    </button>
+
+</nav>
+
 
     <main>
+
+      <!-- =========================
+           HERO
+      ========================= -->
+
       <div class="hero flex just-center">
+
         <div class="greeting-name">
+
           <div class="name">
             <span>Hey Im</span>
           </div>
 
           <div class="name">
-            <h1><span>Ahmad Mashal</span></h1>
+            <h1>
+              <span>Ahmad Mashal</span>
+            </h1>
           </div>
 
           <div class="major">
             I'm a
+
             <span class="typing">
               <span>Software Engineer</span>
               <span>Web Developer</span>
@@ -47,464 +73,878 @@
             </span>
           </div>
 
+
           <div class="icons-media">
+
             <div class="flex">
+
               <div>
-                <a class="icon" href="https://github.com/ahmadmeshaal">
+                <a
+                  class="icon"
+                  href="https://github.com/ahmadmeshaal"
+                  target="_blank"
+                >
                   <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
               </div>
+
 
               <div>
                 <a
                   class="icon"
                   href="https://www.linkedin.com/in/ahmad-mashal-2a2b6729b/"
+                  target="_blank"
                 >
                   <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
               </div>
 
+
               <div>
-                <a class="icon" href="https://www.instagram.com/meow_manz/">
+                <a
+                  class="icon"
+                  href="https://www.instagram.com/meow_manz/"
+                  target="_blank"
+                >
                   <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
               </div>
 
+
               <div>
-                <a class="icon" href="mailto:ahmadmeshaal03@gmail.com">
+                <a
+                  class="icon"
+                  href="mailto:ahmadmeshaal03@gmail.com"
+                >
                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
                 </a>
               </div>
+
             </div>
+
           </div>
+
         </div>
+
 
         <div class="img">
-          <img src="/ahmad.png" alt="" />
+          <img src="/ahmad.png" alt="Ahmad Mashal" />
         </div>
+
       </div>
 
-      <div class="info">
+
+      <!-- =========================
+           ABOUT ME
+      ========================= -->
+
+      <div class="info" id="about">
+
         <h2 class="title">About Me</h2>
 
         <p>
-          Hey there! I'm <span>Ahmad Meshaal</span>, a Software Engineering
-          graduate from Jordan University of Science and Technology, passionate
-          about building web and mobile applications. I enjoy turning ideas into
-          practical solutions and solving problems through code. My journey in
-          tech is focused on continuous learning, building real projects, and
-          improving my skills with modern technologies like Flutter and .NET.
+          Hey there! I'm
+          <span>Ahmad Meshaal</span>,
+          a Software Engineering graduate from Jordan University
+          of Science and Technology, passionate about building web
+          and mobile applications. I enjoy turning ideas into
+          practical solutions and solving problems through code.
+          My journey in tech is focused on continuous learning,
+          building real projects, and improving my skills with
+          modern technologies like Flutter and .NET.
         </p>
+
 
         <p class="bord">
-          Focused on growing as a Full Stack Developer and building practical
-          solutions for real-world problems.
+          Focused on growing as a Full Stack Developer and building
+          practical solutions for real-world problems.
         </p>
+
       </div>
+
+
+      <!-- =========================
+           ABOUT CARDS
+      ========================= -->
 
       <div class="cards">
+
         <div class="card">
+
           <div class="icon-title">
-            <a class="icon2 fa fa-instagram"></a>
-            <a class="text">Who I Am</a>
+            <i class="icon2 fa fa-user"></i>
+            <span class="text">Who I Am</span>
           </div>
 
           <div class="list">
             <ul>
+
               <li>
-                Software Engineering graduate from Jordan University of Science
-                and Technology.
+                Software Engineering graduate from Jordan University
+                of Science and Technology.
               </li>
-              <li>Interested in building web and mobile applications.</li>
+
               <li>
-                Always learning and improving my programming skills through
-                practical projects.
+                Interested in building web and mobile applications.
               </li>
+
+              <li>
+                Always learning and improving my programming skills
+                through practical projects.
+              </li>
+
             </ul>
           </div>
+
         </div>
+
+
         <div class="card">
+
           <div class="icon-title">
-            <a class="icon2 fa fa-instagram"></a>
-            <a class="text">What I Do</a>
+            <i class="icon2 fa fa-code"></i>
+            <span class="text">What I Do</span>
           </div>
 
           <div class="list">
             <ul>
-              <li>Build web applications using modern technologies.</li>
+
               <li>
-                Work with Flutter and .NET to develop practical applications.
+                Build web applications using modern technologies.
               </li>
+
               <li>
-                Learn by building projects, solving problems, and working with
-                others.
+                Work with Flutter and .NET to develop practical
+                applications.
               </li>
+
+              <li>
+                Learn by building projects, solving problems,
+                and working with others.
+              </li>
+
             </ul>
           </div>
+
         </div>
+
+
         <div class="card">
+
           <div class="icon-title">
-            <a class="icon2 fa fa-instagram"></a>
-            <a class="text">My Goals</a>
+            <i class="icon2 fa fa-bullseye"></i>
+            <span class="text">My Goals</span>
           </div>
 
           <div class="list">
             <ul>
-              <li>Grow as a Full Stack Developer.</li>
-              <li>Build useful applications that solve real-world problems.</li>
+
               <li>
-                Gain more practical experience and continue developing my
-                technical skills.
+                Grow as a Full Stack Developer.
               </li>
+
+              <li>
+                Build useful applications that solve real-world
+                problems.
+              </li>
+
+              <li>
+                Gain more practical experience and continue
+                developing my technical skills.
+              </li>
+
             </ul>
           </div>
+
         </div>
+
+
         <div class="card">
+
           <div class="icon-title">
-            <a class="icon2 fa fa-instagram"></a>
-            <a class="text">My Philosophy</a>
+            <i class="icon2 fa fa-lightbulb-o"></i>
+            <span class="text">My Philosophy</span>
           </div>
 
           <div class="list">
             <ul>
-              <li>Learn by building and practicing.</li>
+
               <li>
-                Keep things simple and focus on solving the actual problem.
+                Learn by building and practicing.
               </li>
-              <li>There is always something new to learn in technology.</li>
+
+              <li>
+                Keep things simple and focus on solving the actual
+                problem.
+              </li>
+
+              <li>
+                There is always something new to learn in technology.
+              </li>
+
             </ul>
           </div>
+
         </div>
+
       </div>
 
-      <div class="skill-sec">
-        <div class="title"></div>
+
+      <!-- =========================
+           SKILLS
+      ========================= -->
+
+      <section class="skill-sec " id="skills">
+
+        <h2 class="title">My Skills</h2>
+
         <div class="skill-list">
-          <div class="card">
-            <div class="skill-icon"></div>
-            <div class="skill-title"></div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fa fa-html5"></i>
+            </div>
+
+            <div class="skill-title">
+              HTML
+            </div>
           </div>
-          <div class="card">
-            <div class="skill-icon"></div>
-            <div class="skill-title"></div>
+
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fa fa-css3"></i>
+            </div>
+
+            <div class="skill-title">
+              CSS
+            </div>
           </div>
-          <div class="card">
-            <div class="skill-icon"></div>
-            <div class="skill-title"></div>
+
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fa fa-code"></i>
+            </div>
+
+            <div class="skill-title">
+              JavaScript
+            </div>
           </div>
-          <div class="card">
-            <div class="skill-icon"></div>
-            <div class="skill-title"></div>
+
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fa fa-code"></i>
+            </div>
+
+            <div class="skill-title">
+              React
+            </div>
           </div>
-          <div class="card">
-            <div class="skill-icon"></div>
-            <div class="skill-title"></div>
+
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fa fa-mobile"></i>
+            </div>
+
+            <div class="skill-title">
+              Flutter
+            </div>
           </div>
-          <div class="card">
-            <div class="skill-icon"></div>
-            <div class="skill-title"></div>
+
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fa fa-code"></i>
+            </div>
+
+            <div class="skill-title">
+              C# / .NET
+            </div>
           </div>
-          <div class="card">
-            <div class="skill-icon"></div>
-            <div class="skill-title"></div>
+
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fa fa-database"></i>
+            </div>
+
+            <div class="skill-title">
+              SQL
+            </div>
           </div>
-          <div class="card">
-            <div class="skill-icon"></div>
-            <div class="skill-title"></div>
+
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fa fa-git"></i>
+            </div>
+
+            <div class="skill-title">
+              Git
+            </div>
           </div>
+
         </div>
 
-        <div class="project-sec">
-          <h2 class="title">My Projects</h2>
+      </section>
 
-          <div class="project-list">
-            <div class="project-card">
-              <img src="/project1.png" alt="Project" />
 
-              <div class="project-info">
-                <h3>Portfolio Website</h3>
+      <!-- =========================
+           PROJECTS
+      ========================= -->
 
-                <p>
-                  A personal portfolio website to show my skills, projects and
-                  experience.
-                </p>
+      <section class="project-sec"  id="projects">
 
-                <div class="tags">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                </div>
+        <h2 class="title">My Projects</h2>
+
+        <div class="project-list">
+
+          <div class="project-card">
+
+            <img src="/project1.png" alt="Portfolio Project" />
+
+            <div class="project-info">
+
+              <h3>Portfolio Website</h3>
+
+              <p>
+                A personal portfolio website to show my skills,
+                projects and experience.
+              </p>
+
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
               </div>
+
             </div>
 
-            <div class="project-card">
-              <img src="/project2.png" alt="Project" />
+          </div>
 
-              <div class="project-info">
-                <h3>Web Application</h3>
 
-                <p>
-                  A web application built with React to provide a simple and
-                  useful user experience.
-                </p>
+          <div class="project-card">
 
-                <div class="tags">
-                  <span>React</span>
-                  <span>HTML</span>
-                  <span>CSS</span>
-                </div>
+            <img src="/project2.png" alt="Web Application" />
+
+            <div class="project-info">
+
+              <h3>Web Application</h3>
+
+              <p>
+                A web application built with React to provide a
+                simple and useful user experience.
+              </p>
+
+              <div class="tags">
+                <span>React</span>
+                <span>HTML</span>
+                <span>CSS</span>
               </div>
+
             </div>
 
-            <div class="project-card">
-              <img src="/project3.png" alt="Project" />
+          </div>
 
-              <div class="project-info">
-                <h3>Mobile Application</h3>
 
-                <p>
-                  A mobile application built with Flutter and connected to APIs.
-                </p>
+          <div class="project-card">
 
-                <div class="tags">
+            <img src="/project3.png" alt="Mobile Application" />
+
+            <div class="project-info">
+
+              <h3>Mobile Application</h3>
+
+              <p>
+                A mobile application built with Flutter and
+                connected to APIs.
+              </p>
+
+              <div class="tags">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>API</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="project-card">
+
+            <img src="/project4.png" alt="Backend API" />
+
+            <div class="project-info">
+
+              <h3>Backend API</h3>
+
+              <p>
+                A backend API built with .NET for handling
+                application data and requests.
+              </p>
+
+              <div class="tags">
+                <span>.NET</span>
+                <span>C#</span>
+                <span>SQL</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           EXPERIENCE
+      ========================= -->
+
+      <section class="experience-sec" id="experience">
+
+        <h2 class="title">Experience</h2>
+
+        <div class="experience-list">
+
+
+          <div class="experience-item">
+
+            <div class="experience-dot"></div>
+
+            <div class="experience-card">
+
+              <div class="experience-icon">
+                <i class="fa fa-briefcase"></i>
+              </div>
+
+              <div class="experience-content">
+
+                <h3>React Native Intern</h3>
+
+                <h4>CodexEco LLP</h4>
+
+                <span class="date">
+                  May 2026 - Present
+                </span>
+
+                <ul>
+
+                  <li>
+                    Contributed to the core project and official
+                    website, focusing on web development and
+                    platform improvements.
+                  </li>
+
+                  <li>
+                    Worked on implementing new features and
+                    improving user experience.
+                  </li>
+
+                  <li>
+                    Collaborated with the team to solve problems
+                    and improve the platform.
+                  </li>
+
+                </ul>
+
+                <div class="experience-tags">
+                  <span>React Native</span>
+                  <span>Node.js</span>
+                  <span>Redux</span>
+                  <span>Postman</span>
+                  <span>API Testing</span>
+                  <span>Git & Github</span>
+                  <span>Debugging</span>
+                  <span>Team Collaboration</span>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="experience-item">
+
+            <div class="experience-dot"></div>
+
+            <div class="experience-card">
+
+              <div class="experience-icon">
+                <i class="fa fa-briefcase"></i>
+              </div>
+
+              <div class="experience-content">
+
+                <h3>Flutter Trainee</h3>
+
+                <h4>
+                  Dotnet Digital Opportunity Trust Jordan
+                </h4>
+
+                <span class="date">
+                  2026
+                </span>
+
+                <ul>
+
+                  <li>
+                    Learned Flutter development through practical
+                    training and project-based learning.
+                  </li>
+
+                  <li>
+                    Worked with APIs and Firebase to build mobile
+                    applications.
+                  </li>
+
+                  <li>
+                    Improved programming and problem-solving skills
+                    through practical projects.
+                  </li>
+
+                </ul>
+
+                <div class="experience-tags">
                   <span>Flutter</span>
                   <span>Dart</span>
+                  <span>Firebase</span>
                   <span>API</span>
+                  <span>Git</span>
                 </div>
+
               </div>
+
             </div>
 
-            <div class="project-card">
-              <img src="/project4.png" alt="Project" />
+          </div>
 
-              <div class="project-info">
-                <h3>Backend API</h3>
+
+          <div class="experience-item">
+
+            <div class="experience-dot"></div>
+
+            <div class="experience-card">
+
+              <div class="experience-icon">
+                <i class="fa fa-briefcase"></i>
+              </div>
+
+              <div class="experience-content">
+
+                <h3>42 Amman Student</h3>
+
+                <h4>42 Amman</h4>
+
+                <span class="date">
+                  2026 - Present
+                </span>
+
+                <ul>
+
+                  <li>
+                    Learned programming through peer-to-peer
+                    learning and practical projects.
+                  </li>
+
+                  <li>
+                    Worked on programming challenges and
+                    problem-solving tasks.
+                  </li>
+
+                  <li>
+                    Collaborated with other students and learned
+                    through teamwork.
+                  </li>
+
+                </ul>
+
+                <div class="experience-tags">
+                  <span>C</span>
+                  <span>Git</span>
+                  <span>Problem Solving</span>
+                  <span>Teamwork</span>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           EDUCATION
+      ========================= -->
+
+      <section class="education-sec"  id="education">
+
+        <h2 class="title">Education</h2>
+
+        <div class="education-list">
+
+
+          <div class="education-item">
+
+            <div class="education-dot"></div>
+
+            <div class="education-card">
+
+              <div class="education-icon">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+
+              <div class="education-content">
+
+                <h3>Software Engineering</h3>
+
+                <h4>
+                  Jordan University of Science and Technology
+                </h4>
+
+                <span class="date">
+                  2022 - 2026
+                </span>
 
                 <p>
-                  A backend API built with .NET for handling application data
-                  and requests.
+                  Graduated with a Very Good rating.
                 </p>
 
-                <div class="tags">
-                  <span>.NET</span>
-                  <span>C#</span>
-                  <span>SQL</span>
+                <div class="education-tags">
+                  <span>Software Engineering</span>
+                  <span>Programming</span>
+                  <span>Web Development</span>
+                  <span>Database</span>
+                  <span>Software Testing</span>
                 </div>
+
               </div>
+
             </div>
+
           </div>
+
+
+          <div class="education-item">
+
+            <div class="education-dot"></div>
+
+            <div class="education-card">
+
+              <div class="education-icon">
+                <i class="fa fa-code"></i>
+              </div>
+
+              <div class="education-content">
+
+                <h3>BCN</h3>
+
+                <h4>42 Amman</h4>
+
+                <span class="date">
+                  May 2026 - June 2026
+                </span>
+
+                <p>
+                  Completed one month of BCN, focusing on
+                  programming, problem-solving, and peer-to-peer
+                  learning.
+                </p>
+
+                <div class="education-tags">
+                  <span>C</span>
+                  <span>Git</span>
+                  <span>Problem Solving</span>
+                  <span>Peer Learning</span>
+                  <span>Teamwork</span>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
         </div>
 
-        <div class="experience-sec">
-          <h2 class="title">Experience</h2>
+      </section>
 
-          <div class="experience-list">
-            <div class="experience-item">
-              <div class="experience-dot"></div>
 
-              <div class="experience-card">
-                <div class="experience-icon">
-                  <i class="fa fa-briefcase"></i>
-                </div>
+      <!-- =========================
+           GET IN TOUCH
+      ========================= -->
 
-                <div class="experience-content">
-                  <h3>React Native Intern</h3>
+      <section class="contact-sec" id="contact">
 
-                  <h4>CodexEco LLP</h4>
+        <h2 class="title">
+          Get In Touch
+        </h2>
 
-                  <span class="date">May 2026 - Present</span>
 
-                  <ul>
-                    <li>
-                      Contributed to the core project and official website,
-                      focusing on web development and platform improvements.
-                    </li>
+        <div class="contact-list">
 
-                    <li>
-                      Worked on implementing new features and improving user
-                      experience.
-                    </li>
 
-                    <li>
-                      Collaborated with the team to solve problems and improve
-                      the platform.
-                    </li>
-                  </ul>
+          <!-- Let's Connect -->
 
-                  <div class="experience-tags">
-                    <span>React Native</span>
-                    <span>Node.js</span>
-                    <span>Redux</span>
-                    <span>Postman</span>
-                    <span>API Testing</span>
-                    <span>Git & Github</span>
-                    <span>Debugging</span>
-                    <span>Team Collaboration</span>
-                  </div>
-                </div>
-              </div>
+          <div class="contact-card">
+
+            <div class="contact-icon">
+              <i class="fa fa-comments"></i>
             </div>
 
-            <div class="experience-item">
-              <div class="experience-dot"></div>
+            <div class="contact-content">
 
-              <div class="experience-card">
-                <div class="experience-icon">
-                  <i class="fa fa-briefcase"></i>
-                </div>
+              <h3>Let's Connect</h3>
 
-                <div class="experience-content">
-                  <h3>Flutter Trainee</h3>
+              <p>
+                I'm always open to discussions, a new project,
+                a creative idea, or an opportunity to be a part
+                of your vision.
+              </p>
 
-                  <h4>Dotnet Digital Opportunity Trust Jordan</h4>
 
-                  <span class="date">2026</span>
+              <div class="contact-links">
 
-                  <ul>
-                    <li>
-                      Learned Flutter development through practical training and
-                      project-based learning.
-                    </li>
+                <a href="mailto:ahmadmeshaal03@gmail.com">
 
-                    <li>
-                      Worked with APIs and Firebase to build mobile
-                      applications.
-                    </li>
+                  <i class="fa fa-envelope"></i>
 
-                    <li>
-                      Improved programming and problem-solving skills through
-                      practical projects.
-                    </li>
-                  </ul>
+                  <span>
+                    ahmadmeshaal03@gmail.com
+                  </span>
 
-                  <div class="experience-tags">
-                    <span>Flutter</span>
-                    <span>Dart</span>
-                    <span>Firebase</span>
-                    <span>API</span>
-                    <span>Git</span>
-                  </div>
-                </div>
+                </a>
+
+
+                <a
+                  href="https://github.com/ahmadmeshaal"
+                  target="_blank"
+                >
+
+                  <i class="fa fa-github"></i>
+
+                  <span>
+                    GitHub
+                  </span>
+
+                </a>
+
+
+                <a
+                  href="https://www.linkedin.com/in/ahmad-mashal-2a2b6729b/"
+                  target="_blank"
+                >
+
+                  <i class="fa fa-linkedin"></i>
+
+                  <span>
+                    LinkedIn
+                  </span>
+
+                </a>
+
               </div>
+
             </div>
 
-            <div class="experience-item">
-              <div class="experience-dot"></div>
-
-              <div class="experience-card">
-                <div class="experience-icon">
-                  <i class="fa fa-briefcase"></i>
-                </div>
-
-                <div class="experience-content">
-                  <h3>42 Amman Student</h3>
-
-                  <h4>42 Amman</h4>
-
-                  <span class="date">2026 - Present</span>
-
-                  <ul>
-                    <li>
-                      Learned programming through peer-to-peer learning and
-                      practical projects.
-                    </li>
-
-                    <li>
-                      Worked on programming challenges and problem-solving
-                      tasks.
-                    </li>
-
-                    <li>
-                      Collaborated with other students and learned through
-                      teamwork.
-                    </li>
-                  </ul>
-
-                  <div class="experience-tags">
-                    <span>C</span>
-                    <span>Git</span>
-                    <span>Problem Solving</span>
-                    <span>Teamwork</span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
+
+
+          <!-- Send Message -->
+
+          <div class="contact-card">
+
+            <div class="contact-icon">
+              <i class="fa fa-paper-plane"></i>
+            </div>
+
+            <div class="contact-content">
+
+              <h3>Send a Message</h3>
+
+
+              <form>
+
+                <div class="input-group">
+
+                  <label for="name">
+                    Name
+                  </label>
+
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                  />
+
+                </div>
+
+
+                <div class="input-group">
+
+                  <label for="email">
+                    Email
+                  </label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your email"
+                  />
+
+                </div>
+
+
+                <div class="input-group">
+
+                  <label for="message">
+                    Message
+                  </label>
+
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Your message"
+                  ></textarea>
+
+                </div>
+
+
+                <button
+                  type="submit"
+                  class="send-btn"
+                >
+                  <i class="fa fa-paper-plane"></i>
+                  Send Message
+                </button>
+
+              </form>
+
+            </div>
+
+          </div>
+
+
         </div>
 
-        <!-- =========================
-     EDUCATION
-========================= -->
+      </section>
 
-        <div class="education-sec">
-          <h2 class="title">Education</h2>
-
-          <div class="education-list">
-            <!-- University -->
-
-            <div class="education-item">
-              <div class="education-dot"></div>
-
-              <div class="education-card">
-                <div class="education-icon">
-                  <i class="fa fa-graduation-cap"></i>
-                </div>
-
-                <div class="education-content">
-                  <h3>Software Engineering</h3>
-
-                  <h4>Jordan University of Science and Technology</h4>
-
-                  <span class="date">2022 - 2026</span>
-
-                  <p>Graduated with a Very Good rating.</p>
-
-                  <div class="education-tags">
-                    <span>Software Engineering</span>
-                    <span>Programming</span>
-                    <span>Web Development</span>
-                    <span>Database</span>
-                    <span>Software Testing</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 42 Amman -->
-
-            <div class="education-item">
-              <div class="education-dot"></div>
-
-              <div class="education-card">
-                <div class="education-icon">
-                  <i class="fa fa-code"></i>
-                </div>
-
-                <div class="education-content">
-                  <h3>BCN</h3>
-
-                  <h4>42 Amman</h4>
-
-                  <span class="date">May 2026 - June 2026</span>
-
-                  <p>
-                    Completed one month of BCN, focusing on programming,
-                    problem-solving, and peer-to-peer learning.
-                  </p>
-
-                  <div class="education-tags">
-                    <span>C</span>
-                    <span>Git</span>
-                    <span>Problem Solving</span>
-                    <span>Peer Learning</span>
-                    <span>Teamwork</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </main>
+
   </body>
 </html>

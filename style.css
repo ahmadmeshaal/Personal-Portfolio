@@ -1,10 +1,11 @@
-```css
 /* =========================
    GENERAL
 ========================= */
 
 * {
   box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -18,7 +19,7 @@ body {
 
 
 /* =========================
-   FLEX
+   FLEX UTILITIES
 ========================= */
 
 .flex {
@@ -35,6 +36,25 @@ body {
 
 
 /* =========================
+   GENERAL TEXT
+========================= */
+
+h1,
+h2,
+h3 {
+  color: rgb(28, 67, 78);
+}
+
+p {
+  color: rgb(90, 105, 110);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* =========================
    NAVBAR
 ========================= */
 
@@ -42,30 +62,46 @@ body {
   color: aliceblue;
 }
 
+/* =========================
+   NAVBAR
+========================= */
+
 nav {
   position: sticky;
+
   top: 20px;
+
   z-index: 100;
-
-  background-color: rgb(49, 113, 130, 0.8);
-  border: 2px solid rgb(28, 67, 78);
-
-  padding: 15px 0;
-  border-radius: 20px;
-
-  margin: auto;
-
-  font-weight: bold;
 
   width: 65%;
   max-width: 900px;
 
-  display: flex;
-  justify-content: center;
-  gap: 25px;
+  margin: auto;
 
-  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  padding: 12px 15px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+
+  background-color: rgb(49, 113, 130, 0.8);
+
+  border: 2px solid rgb(28, 67, 78);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 1px 3px rgb(0 0 0 / 0.1);
 }
+
+
+/* =========================
+   NAVBAR - TABS
+========================= */
 
 .tab {
   color: white;
@@ -76,6 +112,8 @@ nav {
 
   border-radius: 10px;
 
+  font-weight: bold;
+
   transition: 0.3s;
 }
 
@@ -84,12 +122,53 @@ nav {
 
   background-color: rgb(220, 237, 241);
 
-  transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 
 
 /* =========================
-   HERO
+   NAVBAR - THEME BUTTON
+========================= */
+
+.theme-btn {
+  width: 38px;
+
+  height: 38px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  margin-left: 5px;
+
+  border: 2px solid rgb(116, 170, 182);
+
+  border-radius: 50%;
+
+  background-color: rgb(220, 237, 241);
+
+  color: rgb(28, 67, 78);
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  background-color: rgb(49, 113, 130);
+
+  color: white;
+
+  border-color: rgb(28, 67, 78);
+
+  transform: rotate(20deg) scale(1.1);
+}
+/* =========================
+   HERO SECTION
 ========================= */
 
 .hero {
@@ -110,6 +189,11 @@ nav {
 
   gap: 5px;
 }
+
+
+/* =========================
+   HERO - SOCIAL ICONS
+========================= */
 
 .icons-media {
   margin-top: 10px;
@@ -153,26 +237,7 @@ nav {
 
 
 /* =========================
-   TEXT
-========================= */
-
-h1,
-h2,
-h3 {
-  color: rgb(28, 67, 78);
-}
-
-p {
-  color: rgb(90, 105, 110);
-}
-
-a {
-  text-decoration: none;
-}
-
-
-/* =========================
-   NAME
+   HERO - NAME
 ========================= */
 
 .name span {
@@ -217,7 +282,7 @@ a {
 
 
 /* =========================
-   MAJOR / TYPING
+   HERO - MAJOR / TYPING
 ========================= */
 
 .major {
@@ -266,7 +331,7 @@ a {
 
 
 /* =========================
-   TYPING ANIMATION
+   HERO - TYPING ANIMATION
 ========================= */
 
 .typing span:nth-child(1) {
@@ -359,7 +424,7 @@ a {
 
 
 /* =========================
-   ABOUT ME
+   ABOUT ME SECTION
 ========================= */
 
 .info {
@@ -394,7 +459,9 @@ a {
 }
 
 
-/* Highlight name */
+/* =========================
+   ABOUT ME - HIGHLIGHT NAME
+========================= */
 
 .info span {
   font-size: 1.1em;
@@ -420,7 +487,7 @@ a {
 
 
 /* =========================
-   ABOUT DESCRIPTION
+   ABOUT ME - DESCRIPTION
 ========================= */
 
 .bord {
@@ -459,7 +526,7 @@ a {
 
 
 /* =========================
-   TITLES
+   GENERAL SECTION TITLES
 ========================= */
 
 .title {
@@ -472,7 +539,7 @@ a {
 
 
 /* =========================
-   ABOUT CARDS
+   ABOUT ME - CARDS
 ========================= */
 
 .cards {
@@ -487,9 +554,6 @@ a {
 
   gap: 25px;
 }
-
-
-/* Card */
 
 .card {
   width: auto;
@@ -510,9 +574,6 @@ a {
   transition: 0.3s;
 }
 
-
-/* Card hover */
-
 .cards .card:hover {
   transform: translateY(-6px);
 
@@ -524,7 +585,9 @@ a {
 }
 
 
-/* Card title */
+/* =========================
+   ABOUT ME - CARD CONTENT
+========================= */
 
 .icon-title {
   display: flex;
@@ -550,9 +613,6 @@ a {
   color: rgb(28, 67, 78);
 }
 
-
-/* Card list */
-
 .list ul {
   padding-left: 20px;
 
@@ -575,7 +635,7 @@ a {
 
 
 /* =========================
-   SKILLS
+   SKILLS SECTION
 ========================= */
 
 .skill-sec {
@@ -591,9 +651,6 @@ a {
   margin-bottom: 35px;
 }
 
-
-/* Skill grid */
-
 .skill-list {
   display: grid;
 
@@ -603,7 +660,9 @@ a {
 }
 
 
-/* Skill card */
+/* =========================
+   SKILLS - CARDS
+========================= */
 
 .skill-card {
   min-height: 140px;
@@ -630,9 +689,6 @@ a {
   transition: 0.3s;
 }
 
-
-/* Skill hover */
-
 .skill-card:hover {
   transform: translateY(-6px);
 
@@ -642,9 +698,6 @@ a {
     0 0 10px rgb(116 170 182 / 0.6),
     0 0 25px rgb(49 113 130 / 0.35);
 }
-
-
-/* Skill icon */
 
 .skill-icon {
   font-size: 35px;
@@ -658,9 +711,6 @@ a {
   transform: scale(1.15);
 }
 
-
-/* Skill title */
-
 .skill-title {
   font-size: 17px;
 
@@ -671,7 +721,7 @@ a {
 
 
 /* =========================
-   PROJECTS
+   PROJECTS SECTION
 ========================= */
 
 .project-sec {
@@ -691,6 +741,11 @@ a {
 
   margin-top: 30px;
 }
+
+
+/* =========================
+   PROJECTS - CARDS
+========================= */
 
 .project-card {
   background-color: white;
@@ -735,6 +790,11 @@ a {
   margin: 0 0 15px;
 }
 
+
+/* =========================
+   PROJECTS - TAGS
+========================= */
+
 .tags {
   display: flex;
 
@@ -759,6 +819,11 @@ a {
   font-weight: bold;
 }
 
+
+/* =========================
+   PROJECTS - HOVER
+========================= */
+
 .project-card:hover {
   transform: scale(1.03);
 
@@ -771,7 +836,7 @@ a {
 
 
 /* =========================
-   EXPERIENCE
+   EXPERIENCE SECTION
 ========================= */
 
 .experience-sec {
@@ -786,6 +851,11 @@ a {
   margin-bottom: 40px;
 }
 
+
+/* =========================
+   EXPERIENCE - TIMELINE
+========================= */
+
 .experience-list {
   position: relative;
 
@@ -793,9 +863,6 @@ a {
 
   margin: auto;
 }
-
-
-/* Vertical line */
 
 .experience-list::before {
   content: "";
@@ -813,9 +880,6 @@ a {
   background-color: rgb(49, 113, 130);
 }
 
-
-/* Experience item */
-
 .experience-item {
   position: relative;
 
@@ -823,9 +887,6 @@ a {
 
   margin-bottom: 35px;
 }
-
-
-/* Circle */
 
 .experience-dot {
   position: absolute;
@@ -849,7 +910,9 @@ a {
 }
 
 
-/* Experience card */
+/* =========================
+   EXPERIENCE - CARDS
+========================= */
 
 .experience-card {
   display: flex;
@@ -867,9 +930,6 @@ a {
 
   transition: 0.3s;
 }
-
-
-/* Experience icon */
 
 .experience-icon {
   width: 60px;
@@ -896,7 +956,9 @@ a {
 }
 
 
-/* Experience content */
+/* =========================
+   EXPERIENCE - CONTENT
+========================= */
 
 .experience-content {
   flex: 1;
@@ -941,7 +1003,9 @@ a {
 }
 
 
-/* Experience tags */
+/* =========================
+   EXPERIENCE - TAGS
+========================= */
 
 .experience-tags {
   display: flex;
@@ -968,7 +1032,9 @@ a {
 }
 
 
-/* Experience hover */
+/* =========================
+   EXPERIENCE - HOVER
+========================= */
 
 .experience-card:hover {
   transform: scale(1.02);
@@ -981,9 +1047,8 @@ a {
 }
 
 
-```css
 /* =========================
-   EDUCATION
+   EDUCATION SECTION
 ========================= */
 
 .education-sec {
@@ -998,6 +1063,11 @@ a {
   margin-bottom: 40px;
 }
 
+
+/* =========================
+   EDUCATION - TIMELINE
+========================= */
+
 .education-list {
   position: relative;
 
@@ -1005,9 +1075,6 @@ a {
 
   margin: auto;
 }
-
-
-/* Vertical line */
 
 .education-list::before {
   content: "";
@@ -1025,9 +1092,6 @@ a {
   background-color: rgb(49, 113, 130);
 }
 
-
-/* Education item */
-
 .education-item {
   position: relative;
 
@@ -1035,9 +1099,6 @@ a {
 
   margin-bottom: 35px;
 }
-
-
-/* Circle */
 
 .education-dot {
   position: absolute;
@@ -1061,7 +1122,9 @@ a {
 }
 
 
-/* Education card */
+/* =========================
+   EDUCATION - CARDS
+========================= */
 
 .education-card {
   display: flex;
@@ -1079,9 +1142,6 @@ a {
 
   transition: 0.3s;
 }
-
-
-/* Icon */
 
 .education-icon {
   width: 60px;
@@ -1108,7 +1168,9 @@ a {
 }
 
 
-/* Content */
+/* =========================
+   EDUCATION - CONTENT
+========================= */
 
 .education-content {
   flex: 1;
@@ -1139,7 +1201,9 @@ a {
 }
 
 
-/* Tags */
+/* =========================
+   EDUCATION - TAGS
+========================= */
 
 .education-tags {
   display: flex;
@@ -1166,7 +1230,9 @@ a {
 }
 
 
-/* Hover */
+/* =========================
+   EDUCATION - HOVER
+========================= */
 
 .education-card:hover {
   transform: scale(1.02);
@@ -1180,58 +1246,293 @@ a {
 
 
 /* =========================
-   EDUCATION RESPONSIVE
+   CONTACT SECTION
 ========================= */
 
-@media (max-width: 800px) {
+.contact-sec {
+  width: 90%;
+  max-width: 1100px;
 
-  .education-sec {
-    width: 90%;
-  }
-
-  .education-list {
-    width: 95%;
-  }
-
+  margin: 80px auto;
 }
 
+.contact-sec .title {
+  text-align: center;
 
-@media (max-width: 500px) {
-
-  .education-item {
-    padding-left: 40px;
-  }
-
-  .education-card {
-    flex-direction: column;
-
-    padding: 20px;
-  }
-
-  .education-icon {
-    margin-right: 0;
-
-    margin-bottom: 15px;
-  }
-
-  .education-content h3 {
-    font-size: 21px;
-  }
-
-  .education-content h4 {
-    font-size: 16px;
-  }
-
-  .education-content p {
-    font-size: 14px;
-  }
-
+  margin-bottom: 40px;
 }
-```
 
 
 /* =========================
-   RESPONSIVE
+   CONTACT - CARDS LAYOUT
+========================= */
+
+.contact-list {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 25px;
+
+  align-items: stretch;
+}
+
+.contact-card {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+
+  background-color: white;
+
+  border: 1px solid rgb(180, 205, 211);
+
+  border-radius: 15px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 2px 5px rgb(0 0 0 / 0.1);
+
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgb(49, 113, 130);
+
+  box-shadow:
+    0 0 10px rgb(116 170 182 / 0.5),
+    0 0 25px rgb(49 113 130 / 0.4);
+}
+
+
+/* =========================
+   CONTACT - ICON
+========================= */
+
+.contact-icon {
+  width: 60px;
+
+  height: 60px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background-color: rgb(220, 237, 241);
+
+  color: rgb(49, 113, 130);
+
+  border-radius: 10px;
+
+  font-size: 25px;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   CONTACT - CONTENT
+========================= */
+
+.contact-content {
+  width: 100%;
+
+  min-width: 0;
+}
+
+.contact-content h3 {
+  margin: 0 0 12px;
+
+  font-size: 25px;
+
+  color: rgb(28, 67, 78);
+}
+
+.contact-content p {
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  color: rgb(90, 105, 110);
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================
+   CONTACT - LINKS
+========================= */
+
+.contact-links {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.contact-links a {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: rgb(49, 113, 130);
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+  transition: 0.3s;
+
+  min-width: 0;
+}
+
+.contact-links a i {
+  width: 25px;
+
+  min-width: 25px;
+
+  font-size: 20px;
+}
+
+.contact-links a span {
+  overflow-wrap: anywhere;
+}
+
+.contact-links a:hover {
+  background-color: rgb(220, 237, 241);
+
+  padding-left: 15px;
+}
+
+
+/* =========================
+   CONTACT - FORM
+========================= */
+
+.contact-card form {
+  width: 100%;
+}
+
+.input-group {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  margin-bottom: 7px;
+
+  font-size: 15px;
+
+  color: rgb(28, 67, 78);
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+
+  max-width: 100%;
+
+  padding: 12px;
+
+  font-family: monospace;
+
+  font-size: 15px;
+
+  border: 1px solid rgb(180, 205, 211);
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background-color: rgb(242, 247, 248);
+
+  box-sizing: border-box;
+
+  transition: 0.3s;
+}
+
+
+/* =========================
+   CONTACT - INPUTS
+========================= */
+
+.input-group input {
+  height: 45px;
+}
+
+.input-group textarea {
+  height: 120px;
+
+  min-height: 120px;
+
+  max-height: 120px;
+
+  resize: none;
+}
+
+
+/* =========================
+   CONTACT - INPUT FOCUS
+========================= */
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: rgb(49, 113, 130);
+
+  box-shadow:
+    0 0 8px rgb(116 170 182 / 0.4);
+}
+
+
+/* =========================
+   CONTACT - SEND BUTTON
+========================= */
+
+.send-btn {
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 12px 20px;
+
+  background-color: rgb(49, 113, 130);
+
+  color: white;
+
+  font-family: monospace;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background-color: rgb(28, 67, 78);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   RESPONSIVE - TABLET
 ========================= */
 
 @media (max-width: 1000px) {
@@ -1251,6 +1552,10 @@ a {
   }
 }
 
+
+/* =========================
+   RESPONSIVE - MOBILE
+========================= */
 
 @media (max-width: 800px) {
 
@@ -1323,8 +1628,27 @@ a {
   .experience-list {
     width: 95%;
   }
+
+
+  .education-sec {
+    width: 90%;
+  }
+
+
+  .education-list {
+    width: 95%;
+  }
+
+
+  .contact-list {
+    grid-template-columns: 1fr;
+  }
 }
 
+
+/* =========================
+   RESPONSIVE - SMALL MOBILE
+========================= */
 
 @media (max-width: 500px) {
 
@@ -1345,7 +1669,13 @@ a {
     padding: 6px 8px;
   }
 
+.theme-btn {
+    width: 32px;
 
+    height: 32px;
+
+    font-size: 15px;
+  }
   .hero {
     padding-top: 70px;
   }
@@ -1369,7 +1699,9 @@ a {
   .info .title,
   .skill-sec .title,
   .project-sec .title,
-  .experience-sec .title {
+  .experience-sec .title,
+  .education-sec .title,
+  .contact-sec .title {
     font-size: 30px;
   }
 
@@ -1455,5 +1787,63 @@ a {
   .experience-content li {
     font-size: 14px;
   }
-}
 
+
+  .education-item {
+    padding-left: 40px;
+  }
+
+
+  .education-card {
+    flex-direction: column;
+
+    padding: 20px;
+  }
+
+
+  .education-icon {
+    margin-right: 0;
+
+    margin-bottom: 15px;
+  }
+
+
+  .education-content h3 {
+    font-size: 21px;
+  }
+
+
+  .education-content h4 {
+    font-size: 16px;
+  }
+
+
+  .education-content p {
+    font-size: 14px;
+  }
+
+
+  .contact-sec {
+    width: 90%;
+  }
+
+
+  .contact-card {
+    padding: 20px;
+  }
+
+
+  .contact-content h3 {
+    font-size: 21px;
+  }
+
+
+  .contact-content p {
+    font-size: 14px;
+  }
+
+
+  .contact-links a {
+    font-size: 14px;
+  }
+}
