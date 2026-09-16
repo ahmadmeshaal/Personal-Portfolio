@@ -255,6 +255,9 @@ p {
     box-sizing: border-box;
     box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
     transition: 0.3s;
+
+
+
 }
 .skill-list {
     display: grid;
@@ -270,6 +273,263 @@ p {
     box-shadow: 0 4px 10px rgb(0 0 0 / 0.15);
 }
 
+.project-sec {
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid rgb(180, 205, 211);
+    border-radius: 15px;
+    overflow: hidden;
+
+    box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+
+    transition: 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-info h3 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.project-info p {
+    font-size: 16px;
+    margin: 0 0 15px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    background-color: rgb(220, 237, 241);
+    color: rgb(28, 67, 78);
+
+    padding: 6px 12px;
+    border-radius: 15px;
+
+    border: 1px solid rgb(116, 170, 182);
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 10px rgb(116 170 182 / 0.5),
+        0 0 25px rgb(49 113 130 / 0.4);
+
+    border-color: rgb(49, 113, 130);
+}
+.experience-sec {
+    width: 90%;
+    margin: 80px auto;
+}
+
+.experience-sec .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.experience-list {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+/* Vertical line */
+
+.experience-list::before {
+    content: "";
+
+    position: absolute;
+
+    left: 15px;
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background-color: rgb(49, 113, 130);
+}
+
+.experience-item {
+    position: relative;
+
+    padding-left: 50px;
+
+    margin-bottom: 35px;
+}
+
+/* Circle */
+
+.experience-dot {
+    position: absolute;
+
+    left: 6px;
+    top: 35px;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background-color: rgb(49, 113, 130);
+
+    border: 5px solid rgb(220, 237, 241);
+
+    box-shadow: 0 0 0 2px rgb(49, 113, 130);
+}
+
+/* Card */
+
+.experience-card {
+    display: flex;
+
+    background-color: white;
+
+    border: 1px solid rgb(180, 205, 211);
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+
+    transition: 0.3s;
+}
+
+/* Icon */
+
+.experience-icon {
+    width: 60px;
+    height: 60px;
+
+    min-width: 60px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(220, 237, 241);
+
+    color: rgb(49, 113, 130);
+
+    border-radius: 10px;
+
+    font-size: 25px;
+
+    margin-right: 20px;
+}
+
+/* Content */
+
+.experience-content {
+    flex: 1;
+}
+
+.experience-content h3 {
+    margin: 0;
+
+    font-size: 25px;
+}
+
+.experience-content h4 {
+    margin: 5px 0;
+
+    font-size: 18px;
+
+    color: rgb(49, 113, 130);
+}
+
+.date {
+    color: rgb(90, 105, 110);
+
+    font-size: 16px;
+}
+
+.experience-content ul {
+    padding-left: 20px;
+
+    margin-top: 20px;
+}
+
+.experience-content li {
+    color: rgb(90, 105, 110);
+
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+.experience-content li::marker {
+    color: rgb(49, 113, 130);
+}
+
+/* Tags */
+
+.experience-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+.experience-tags span {
+    background-color: rgb(220, 237, 241);
+
+    color: rgb(28, 67, 78);
+
+    border: 1px solid rgb(180, 205, 211);
+
+    padding: 6px 12px;
+
+    border-radius: 15px;
+
+    font-size: 14px;
+}
+
+/* Hover */
+
+.experience-card:hover {
+    transform: scale(1.02);
+
+    border-color: rgb(49, 113, 130);
+
+    box-shadow:
+        0 0 10px rgb(116 170 182 / 0.5),
+        0 0 25px rgb(49 113 130 / 0.4);
+}
 .typing span {
   padding-top: 8px;
   position: absolute;
