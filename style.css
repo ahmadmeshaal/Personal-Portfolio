@@ -4,10 +4,27 @@
 
 * {
   box-sizing: border-box;
-    scroll-behavior: smooth;
 
 }
+html {
+  scroll-behavior: smooth;
+}
 
+/* =========================
+   SECTION SEPARATOR
+========================= */
+
+section,
+.info,
+.cards {
+  scroll-margin-top: 100px;
+}
+
+section:not(.contact-sec),
+.info,
+.cards {
+  border-bottom: 1px solid rgba(180, 205, 211, 0.5);
+}
 body {
   margin: 0;
   min-height: 100vh;
@@ -65,107 +82,78 @@ a {
 /* =========================
    NAVBAR
 ========================= */
+/* =========================
+   NAVBAR
+========================= */
 
 nav {
   position: sticky;
-
-  top: 20px;
-
+  top: 15px;
   z-index: 100;
 
-  width: 65%;
-  max-width: 900px;
-
+  width: fit-content;
+  max-width: 90%;
   margin: auto;
-
-  padding: 12px 15px;
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  gap: 10px;
-
-  background-color: rgb(49, 113, 130, 0.8);
-
-  border: 2px solid rgb(28, 67, 78);
-
-  border-radius: 20px;
-
-  box-shadow:
-    0 1px 3px rgb(0 0 0 / 0.1);
-}
-
-
-/* =========================
-   NAVBAR - TABS
-========================= */
-
-.tab {
-  color: white;
-
-  text-decoration: none;
 
   padding: 8px 12px;
 
-  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgb(180, 205, 211);
+  border-radius: 12px;
+
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.08);
+}
+
+.tab {
+  color: rgb(28, 67, 78);
+  text-decoration: none;
+
+  padding: 6px 9px;
+  border-radius: 7px;
+
+  font-size: 14px;
   font-weight: bold;
 
   transition: 0.3s;
 }
 
 .tab:hover {
-  color: rgb(28, 67, 78);
-
   background-color: rgb(220, 237, 241);
-
-  transform: translateY(-3px);
+  color: rgb(28, 67, 78);
 }
-
 
 /* =========================
    NAVBAR - THEME BUTTON
 ========================= */
-
 .theme-btn {
-  width: 38px;
-
-  height: 38px;
+  width: 30px;
+  height: 30px;
 
   display: flex;
-
   justify-content: center;
-
   align-items: center;
 
-  margin-left: 5px;
+  margin-left: 3px;
 
-  border: 2px solid rgb(116, 170, 182);
-
+  border: none;
   border-radius: 50%;
 
-  background-color: rgb(220, 237, 241);
-
+  background-color: transparent;
   color: rgb(28, 67, 78);
 
-  font-size: 18px;
-
+  font-size: 16px;
   cursor: pointer;
 
   transition: 0.3s;
 }
 
 .theme-btn:hover {
-  background-color: rgb(49, 113, 130);
-
-  color: white;
-
-  border-color: rgb(28, 67, 78);
-
-  transform: rotate(20deg) scale(1.1);
+  background-color: rgb(220, 237, 241);
 }
 /* =========================
    HERO SECTION
@@ -1530,7 +1518,23 @@ nav {
   transform: translateY(-2px);
 }
 
+/* =========================
+   FOOTER
+========================= */
 
+footer {
+  margin-top: 80px;
+  padding: 25px;
+  text-align: center;
+  background-color: rgb(28, 67, 78);
+  color: white;
+}
+
+footer p {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+}
 /* =========================
    RESPONSIVE - TABLET
 ========================= */
@@ -1670,11 +1674,9 @@ nav {
   }
 
 .theme-btn {
-    width: 32px;
-
-    height: 32px;
-
-    font-size: 15px;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
   }
   .hero {
     padding-top: 70px;
