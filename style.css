@@ -16,7 +16,8 @@ html {
 
 section,
 .info,
-.cards {
+.cards,
+.hero {
   scroll-margin-top: 100px;
 }
 
@@ -78,13 +79,6 @@ a {
 .btn {
   color: aliceblue;
 }
-
-/* =========================
-   NAVBAR
-========================= */
-/* =========================
-   NAVBAR
-========================= */
 
 nav {
   position: sticky;
@@ -723,7 +717,7 @@ nav {
 .project-list {
   display: grid;
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   gap: 25px;
 
