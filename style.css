@@ -611,7 +611,7 @@ nav {
   margin-bottom: 10px;
 }
 
-.list li::marker {
+.list li marker {
   color: rgb(49, 113, 130);
 }
 
