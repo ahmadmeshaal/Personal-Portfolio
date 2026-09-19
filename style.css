@@ -14,16 +14,11 @@ html {
    SECTION SEPARATOR
 ========================= */
 
-section,
-.info,
-.cards,
-.hero {
+section {
   scroll-margin-top: 100px;
 }
 
-section:not(.contact-sec),
-.info,
-.cards {
+section:not(.contact-sec):not(.info) {
   border-bottom: 1px solid rgba(180, 205, 211, 0.5);
 }
 body {
