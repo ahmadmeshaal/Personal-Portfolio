@@ -5,38 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="/images/" />
     <link rel="stylesheet" href="/style.css" />
-
   </head>
 
   <body>
-    <!-- =========================
-         NAVBAR
-    ========================= -->
+
+  <input type="checkbox" id="dark-mode">
+
+  <div class="page">
+
     <nav>
       <a href="#home" class="tab">Home</a>
-
       <a href="#about" class="tab">About</a>
-
       <a href="#skills" class="tab">Skills</a>
-
       <a href="#projects" class="tab">Projects</a>
-
       <a href="#experience" class="tab">Experience</a>
-
       <a href="#education" class="tab">Education</a>
-
       <a href="#contact" class="tab">Contact</a>
 
-      <button class="theme-btn" type="button" title="Change Theme">
-        <i class="fa fa-sun-o"></i>
-      </button>
+      <label for="dark-mode" class="theme-btn">
+        <i class="fa fa-moon-o"></i>
+      </label>
     </nav>
 
     <main>
@@ -119,7 +117,7 @@
 
       <section class="info" id="about">
         <h2 class="title">About Me</h2>
- <!--
+        <!--
         <p>
           Hey there! I'm
           <span>Ahmad Meshaal</span>, a Software Engineering graduate from
@@ -145,15 +143,11 @@
 
           <div class="list">
             <ul>
-              <li>
-               Software Engineering graduate from JUST.
-              </li>
+              <li>Software Engineering graduate from JUST.</li>
 
               <li>Interested in web and mobile development.</li>
 
-              <li>
-               Always learning through practical projects.
-              </li>
+              <li>Always learning through practical projects.</li>
             </ul>
           </div>
         </div>
@@ -168,13 +162,9 @@
             <ul>
               <li>Build web applications.</li>
 
-              <li>
-                Work with Flutter and .NET.
-              </li>
+              <li>Work with Flutter and .NET.</li>
 
-              <li>
-                Learn through projects and teamwork.
-              </li>
+              <li>Learn through projects and teamwork.</li>
             </ul>
           </div>
         </div>
@@ -191,9 +181,7 @@
 
               <li>Build useful applications.</li>
 
-              <li>
-                Gain more practical experience.
-              </li>
+              <li>Gain more practical experience.</li>
             </ul>
           </div>
         </div>
@@ -208,9 +196,7 @@
             <ul>
               <li>Learn by building and practicing.</li>
 
-              <li>
-                 Focus on solving the actual problem.
-              </li>
+              <li>Focus on solving the actual problem.</li>
 
               <li>Always keep learning.</li>
             </ul>
@@ -221,7 +207,47 @@
       <!-- =========================
            SKILLS
       ========================= -->
-   <section class="skill-sec" id="skills"> <h2 class="title">My Skills</h2> <div class="skill-list"> <div class="skill-card"> <div class="skill-icon"> <i class="devicon-html5-plain"></i> </div> <div class="skill-title">HTML</div> </div> <div class="skill-card"> <div class="skill-icon"> <i class="devicon-css3-plain"></i> </div> <div class="skill-title">CSS</div> </div> <div class="skill-card"> <div class="skill-icon"> <i class="devicon-javascript-plain"></i> </div> <div class="skill-title">JavaScript</div> </div> <div class="skill-card"> <div class="skill-icon"> <i class="devicon-react-original"></i> </div> <div class="skill-title">React</div> </div> <div class="skill-card"> <div class="skill-icon"> <i class="devicon-flutter-plain"></i> </div> <div class="skill-title">Flutter</div> </div> <div class="skill-card"> <div class="skill-icon"> <i class="devicon-php-plain"></i> </div> <div class="skill-title">PHP</div> </div> <div class="skill-card"> <div class="skill-icon"> <i class="devicon-laravel-original"></i> </div> <div class="skill-title">Laravel</div> </div> <div class="skill-card"> <div class="skill-icon"> <i class="devicon-mysql-original"></i> </div> <div class="skill-title">MySQL</div> </div> </div> </section>
+      <section class="skill-sec" id="skills">
+        <h2 class="title">My Skills</h2>
+        <div class="skill-list">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="devicon-html5-plain"></i></div>
+            <div class="skill-title">HTML</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="devicon-css3-plain"></i></div>
+            <div class="skill-title">CSS</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="devicon-javascript-plain"></i>
+            </div>
+            <div class="skill-title">JavaScript</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="devicon-react-original"></i></div>
+            <div class="skill-title">React</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="devicon-flutter-plain"></i></div>
+            <div class="skill-title">Flutter</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="devicon-php-plain"></i></div>
+            <div class="skill-title">PHP</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="devicon-laravel-original"></i>
+            </div>
+            <div class="skill-title">Laravel</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="devicon-mysql-original"></i></div>
+            <div class="skill-title">MySQL</div>
+          </div>
+        </div>
+      </section>
 
       <!-- =========================
            PROJECTS
@@ -253,7 +279,7 @@
           </div>
 
           <div class="project-card">
-            <img src="/images/10838348.png" alt="Web Application" />
+            <img src="/images/web.png" alt="Web Application" />
 
             <div class="project-info">
               <h3>Web Application</h3>
@@ -273,7 +299,7 @@
 
           <div class="project-card">
             <img
-              src="/images/Flight-App-Flutter-502x512.jpg"
+              src="/images/mobile-app-shots.png"
               alt="Mobile Application"
             />
 

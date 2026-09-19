@@ -19,6 +19,8 @@ section {
 }
 
 section:not(.contact-sec):not(.info) {
+  
+  padding-bottom: 80px;
   border-bottom: 1px solid rgba(180, 205, 211, 0.5);
 }
 body {
@@ -36,7 +38,7 @@ body {
 ========================= */
 
 .flex {
-  display: flex;
+  display: flex
 }
 
 .row {
@@ -1837,4 +1839,86 @@ footer p {
   .contact-links a {
     font-size: 14px;
   }
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+#dark-mode {
+  display: none;
+}
+
+#dark-mode:checked ~ .page {
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+#dark-mode:checked ~ .page nav {
+  background-color: rgba(30, 30, 30, 0.9);
+  border-color: #444;
+}
+
+/* Headings */
+
+#dark-mode:checked ~ .page h1,
+#dark-mode:checked ~ .page h2,
+#dark-mode:checked ~ .page h3 {
+  color: white;
+}
+
+/* Paragraphs */
+
+#dark-mode:checked ~ .page p {
+  color: #ccc;
+}
+
+/* Navigation links */
+
+#dark-mode:checked ~ .page .tab {
+  color: white;
+}
+
+/* Cards */
+
+#dark-mode:checked ~ .page .card,
+#dark-mode:checked ~ .page .skill-card,
+#dark-mode:checked ~ .page .project-card,
+#dark-mode:checked ~ .page .experience-card,
+#dark-mode:checked ~ .page .education-card,
+#dark-mode:checked ~ .page .contact-card {
+  background-color: #1e1e1e;
+  color: white;
+  border-color: #444;
+}
+
+/* Card text */
+
+#dark-mode:checked ~ .page .text,
+#dark-mode:checked ~ .page .skill-title {
+  color: white;
+}
+
+/* Inputs */
+
+#dark-mode:checked ~ .page input,
+#dark-mode:checked ~ .page textarea {
+  background-color: #1e1e1e;
+  color: white;
+  border-color: #555;
+}
+
+/* Section borders */
+
+#dark-mode:checked ~ .page section:not(.contact-sec):not(.info) {
+  border-bottom-color: #444;
+}
+
+/* Footer */
+
+#dark-mode:checked ~ .page footer {
+  background-color: #000;
 }
