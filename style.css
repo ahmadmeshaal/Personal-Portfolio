@@ -401,7 +401,19 @@ nav {
   }
 }
 
+.cv-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4b1e70;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
 
+.cv-btn:hover {
+  opacity: 0.8;
+}
 /* =========================
    ABOUT ME SECTION
 ========================= */
@@ -1922,3 +1934,6 @@ footer p {
 #dark-mode:checked ~ .page footer {
   background-color: #000;
 }
+
+
+
