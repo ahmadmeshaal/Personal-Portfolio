@@ -414,6 +414,48 @@ nav {
 .cv-btn:hover {
   opacity: 0.8;
 }
+
+
+
+/* =========================
+   HERO - CTA BUTTON
+========================= */
+
+.hero-cta {
+  margin-top: 25px;
+}
+
+.cta-btn {
+  display: inline-block;
+
+  padding: 12px 22px;
+
+  background-color: rgb(49, 113, 130);
+
+  color: white;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  font-weight: bold;
+
+  text-decoration: none;
+
+  border: 2px solid rgb(49, 113, 130);
+
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: transparent;
+
+  color: rgb(49, 113, 130);
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 5px 15px rgb(49 113 130 / 0.25);
+}
 /* =========================
    ABOUT ME SECTION
 ========================= */
